@@ -1,0 +1,14 @@
+<app-toolbar [title]="title" [href]="href"></app-toolbar>
+
+<section class="container">
+    <div class="movie-detail">
+        <h2>{{movieDetail.title}}</h2>
+        <img [src]="movieDetail.poster_path" alt="" class="img-fluid">
+        <p>{{movieDetail.overview}}</p>
+        <div class="card-movie">
+            <p>Voto promedio: {{movieDetail.vote_average}}⭐</p>
+            <p>Inventario Disponibles: {{movieDetail.inventory}}</p>
+            <p>Precio por pelicula: {{movieDetail.price}}💸</p>
+        </div>
+    </div>
+  </section>

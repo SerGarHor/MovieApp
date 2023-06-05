@@ -1,0 +1,70 @@
+<app-toolbar [title]="title" [href]="href"></app-toolbar>
+
+<form [formGroup]="formulario" (ngSubmit)="submitForm()" class="needs-validation" novalidate>
+  <div class="form-group campo-form">
+    <label for="title">Título</label>
+    <input type="text" class="form-control" id="title" placeholder="Título" formControlName="title" required>
+    <mat-error class="required" *ngIf="formulario.controls['title'].invalid && formulario.controls['title'].touched">
+      El título es requerido.
+    </mat-error>
+  </div>
+
+  <div class="form-group campo-form">
+    <label for="poster_path">URL Imagen</label>
+    <input type="text" class="form-control" id="poster_path" placeholder="Imagen" formControlName="poster_path"
+      required>
+    <mat-error class="required"
+      *ngIf="formulario.controls['poster_path'].invalid && formulario.controls['poster_path'].touched">
+      La URL de la imagen es requerida.
+    </mat-error>
+  </div>
+
+  <div class="form-group campo-form">
+    <label for="price">Precio</label>
+    <input type="number" class="form-control" id="price" placeholder="Precio" formControlName="price" required>
+    <mat-error class="required" *ngIf="formulario.controls['price'].invalid && formulario.controls['price'].touched">
+      El precio es requerido.
+    </mat-error>
+  </div>
+
+  <div class="form-group campo-form">
+    <label for="inventory">Cantidad en Inventario</label>
+    <input type="number" class="form-control" id="inventory" placeholder="Inventario" formControlName="inventory"
+      required>
+    <mat-error class="required"
+      *ngIf="formulario.controls['inventory'].invalid && formulario.controls['inventory'].touched">
+      El inventario es requerido.
+    </mat-error>
+  </div>
+
+  <div class="form-group campo-form">
+    <label for="release_date">Fecha de Estreno</label>
+    <input type="date" class="form-control" id="release_date" formControlName="release_date" required>
+    <mat-error class="required"
+      *ngIf="formulario.controls['release_date'].invalid && formulario.controls['release_date'].touched">
+      La fecha es requerida
+    </mat-error>
+  </div>
+
+  <div class="form-group campo-form">
+    <label for="overview">Descripción</label>
+    <textarea class="form-control" id="overview" placeholder="Descripción" formControlName="overview"
+      required></textarea>
+    <mat-error class="required" *ngIf="formulario.controls['overview'].invalid && formulario.controls['overview'].touched">
+      La descripción es requerida.
+    </mat-error>
+  </div>
+
+  <div class="form-group campo-form">
+    <label for="vote_average">Voto Promedio</label>
+    <input type="number" class="form-control" id="vote_average" placeholder="7.5" formControlName="vote_average"
+      required>
+    <mat-error class="required"
+      *ngIf="formulario.controls['vote_average'].invalid && formulario.controls['vote_average'].touched">
+      El voto promedio es requerido.
+    </mat-error>
+  </div>
+
+
+  <button type="submit" class="btn btn-block" [disabled]="formulario.invalid">Guardar</button>
+</form>

@@ -1,0 +1,19 @@
+.movie-detail{
+    margin: 2rem 1rem 1rem 1rem;
+    color: #fff;
+    text-align: center;
+    img{
+        border-radius: 2%;
+        margin: 2rem 0; 
+    }
+}
+
+.card-movie{
+    margin: 2rem 0;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 2%;
+    p{
+        margin: 0.3rem 0;
+    }
+}

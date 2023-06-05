@@ -1,0 +1,20 @@
+<header>
+  <h2>Video Movies🎬</h2>
+  <nav class="nav-container">
+    <ul>
+      <li><a routerLink="">Inicio</a></li>
+      <li><a routerLink="/crear">Crear</a></li>
+    </ul>
+  </nav>
+  <input (keyup)="filtrarDatos($event.target)" type="text" class="custom-input" id="search" placeholder="Buscar...">
+</header>
+
+<section class="cards">
+    <div  *ngFor="let movie of allmovies[0]" form>
+        <img [src]="movie.poster_path" alt="Poster de pelicula">
+        <div class="info-style">
+          <h5>{{movie.title}}</h5>
+          <h6 (click)="openMovieDetail(movie)">Ver detalles</h6>
+        </div>
+  </div>
+</section>

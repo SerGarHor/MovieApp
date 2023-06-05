@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .form-group.campo-form {
+    margin-top: 1rem;
+  }
+  
+  .form-group.campo-form label {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+  }
+  
+  .form-group.campo-form input,
+  .form-group.campo-form textarea {
+    margin: 1rem 2rem 0 2rem;
+    width: 100%;
+  }
+  
+  @media (min-width: 576px) {
+    .form-group.campo-form {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  
+    .form-group.campo-form input,
+    .form-group.campo-form textarea {
+      width: calc(100% - 4rem);
+    }
+  }
+
+  @media (min-width: 320px) {
+    .form-group.campo-form {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  
+    .form-group.campo-form input,
+    .form-group.campo-form textarea {
+      width: calc(100% - 4rem);
+    }
+  }
+  
+  .required {
+    color: #e53b3b;
+    margin-left: 2rem;
+  }
+  
+  button {
+    margin-top: 2rem;
+    background-color: #00ff08;
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+

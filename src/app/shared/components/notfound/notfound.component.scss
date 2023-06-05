@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .home-link {
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+  }
